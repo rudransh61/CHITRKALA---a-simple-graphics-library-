@@ -58,6 +58,9 @@ int main() {
     int screenHeight = 24;
 
     renderRedScreen(screenWidth, screenHeight);
+	
+	int check;
+	std::cin>>check;
 
     return 0;
 }
