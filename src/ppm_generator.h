@@ -13,6 +13,8 @@ typedef struct {
 
 void fill(Pixel image[WIDTH][HEIGHT], Pixel color);
 
+void drawLine(Pixel image[WIDTH][HEIGHT], int x1, int y1, int x2, int y2, Pixel color);
+
 void saveImagePPM(Pixel image[WIDTH][HEIGHT], const char* filepath);
 
 #endif // PPM_GENERATOR_H

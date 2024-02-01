@@ -1,14 +1,15 @@
-#include "ppm_generator.h"
+// main.cpp
+
+#include "SimpleGraphics.h"
 
 int main() {
-    Pixel pixels[WIDTH][HEIGHT];
+    SimpleGraphics graphics(512, 512);
 
-    Pixel fillColor = {255, 0, 0};  // Red color
-    fill(pixels, fillColor);
+    graphics.fillCanvas(255, 0, 0);  // Red canvas
 
-    const char* ppmFilePath = "output.ppm";
+    graphics.drawLine(100, 100, 400, 400, 0, 255, 0);  // Green line
 
-    saveImagePPM(pixels, ppmFilePath);
+    graphics.saveImagePPM("output.ppm");
 
     return 0;
 }
